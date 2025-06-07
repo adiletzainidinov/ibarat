@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+    <style>
+       #progress[type="range"] {
+      -webkit-appearance: none;
+      width: 100%;
+      height: 4px;
+      background: #8E8E93;
+      border-radius: 5px;
+      outline: none;
+      cursor: pointer;
+    }
+
+    #progress[type="range"]::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      height: 14px;
+      width: 14px;
+      border-radius: 50%;
+      background: #fff;
+      border: 1px solid #89B9AD;
+    }
+    
+    #progress[type="range"]::-moz-range-track {
+  background: #89B9AD;
+  border-radius: 5px;
+  z-index: 2929;
+}
+  </style>
+    </style>
+  </head>
+  <body>
+    <!-- Daarat -->
+    <div style="max-width: 1440px; margin: 0 auto">
+      <div style="display: flex; flex-direction: column; align-items: center">
+        <!-- Bul jerde daarat aluunun okumdorunun tartibi tizme turundo korsotuldu -->
+        <div
+          style="
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+          "
+        >
+          <h2
+            style="
+              margin: 0;
+              font-size: 20px;
+              font-weight: 600;
+              line-height: 26px;
+              color: #3d3d3d;
+              font-family: Robot, sans-serif;
+              letter-spacing: -0.43px;
+            "
+          >
+            Кимге даарат алуу парз?
+          </h2>
+          <ul
+            style="
+              padding: 0;
+              margin: 0;
+              display: flex;
+              flex-direction: column;
+              align-items: flex-start;
+            "
+          >
+            <li
+              style="
+                list-style: none;
+                margin-bottom: 0;
+                margin-top: 8px;
+                font-size: 16px;
+                font-weight: normal;
+                line-height: 22px;
+                letter-spacing: -0.41px;
+                color: #3d3d3d;
+                font-family: Robot, sans-serif;
+              "
+            >
+              1. Мусулманга.
+            </li>
+            <li
+              style="
+                list-style: none;
+                margin-bottom: 0;
+                margin-top: 8px;
+                font-size: 16px;
+                font-weight: normal;
+                line-height: 22px;
+                letter-spacing: -0.41px;
+                color: #3d3d3d;
+                font-family: Robot, sans-serif;
+              "
+            >
+              2. Балагатка жеткен балага жана кызга.
+            </li>
+            <li
+              style="
+                list-style: none;
+                margin-bottom: 0;
+                margin-top: 8px;
+                font-size: 16px;
+                font-weight: normal;
+                line-height: 22px;
+                letter-spacing: -0.41px;
+                color: #3d3d3d;
+                font-family: Robot, sans-serif;
+              "
+            >
+              3. Акыл эси бар адамга.
+            </li>
+            <li
+              style="
+                list-style: none;
+                margin-bottom: 0;
+                margin-top: 8px;
+                font-size: 16px;
+                font-weight: normal;
+                line-height: 22px;
+                letter-spacing: -0.41px;
+                color: #3d3d3d;
+                font-family: Robot, sans-serif;
+              "
+            >
+              4. Сууну колдонууга кудурети жеткен адамга.
+            </li>
+          </ul>
+        </div>
+
+        <!-- Bul Jerde surotu menen korsotulgon daarat aluu tartibi korsotulgon -->
+        <div
+          style="
+            margin-top: 24px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+          "
+        >
+          <img
+            style="width: 326px; height: 207px; border-radius: 20px"
+            src="./img/aiym-ruku.svg"
+            alt="aiym-ruku"
+          />
+          <div
+            style="
+              background-color: #89b9ad;
+              height: fit-content;
+              width: 91%;
+              max-width: 500px;
+              border-radius: 40px;
+              display: flex;
+              gap: 22px;
+              padding-left: 24px;
+              padding-right: 24px;
+              padding-top: 24px;
+              padding-bottom: 22px;
+              justify-content: space-around;
+              align-items: center;
+              margin-top: 24px;
+            "
+          >
+            <div
+              style="
+                position: relative;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                min-width: 40px;
+                width: 40px;
+                height: 40px;
+                border-radius: 100%;
+                border: 2px solid #f2f2f7;
+              "
+            >
+              <img
+                style="position: absolute; width: 100%; height: 100%"
+                src="./img/nomad-symbol.svg"
+                alt="symbol-vector"
+              />
+              <span
+                style="
+                  position: absolute;
+                  left: 50%;
+                  top: 50%;
+                  transform: translate(-50%, -50%);
+                  font-size: 17px;
+                  font-weight: normal;
+                  line-height: 22px;
+                  letter-spacing: -0.43px;
+                  color: #3d3d3d;
+                  font-family: Robot, sans-serif;
+                "
+                >1</span
+              >
+            </div>
+            <div>
+              <h3
+                style="
+                  margin: 0;
+                  font-size: 17px;
+                  font-weight: 600;
+                  line-height: 22px;
+                  color: #3d3d3d;
+                  font-family: Robot, sans-serif;
+                  letter-spacing: -0.43px;
+                "
+              >
+                Руки моются до запястья.
+              </h3>
+              <p
+                style="
+                  margin-bottom: 0;
+                  margin-top: 8px;
+                  font-size: 16px;
+                  font-weight: normal;
+                  line-height: 22px;
+                  letter-spacing: -0.41px;
+                  color: #3d3d3d;
+                  font-family: Robot, sans-serif;
+                "
+              >
+                Руки моются до запястья. При мытье пальцами одной руки протирают
+                промежутки между пальцами другой руки. Если на пальцах кольца,
+                то их смещают, чтобы под них попала вода.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bul Jerde surotu menen korsotulgon daarat aluu tartibi spisok turundo korsotuldu korsotulgon -->
+        <div
+          style="
+            margin-top: 24px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+          "
+        >
+          <img
+            style="width: 326px; height: 207px; border-radius: 20px"
+            src="./img/aiym-ruku.svg"
+            alt="aiym-ruku"
+          />
+          <div
+            style="
+              background-color: #89b9ad;
+              height: fit-content;
+              width: 91%;
+              max-width: 500px;
+              border-radius: 40px;
+              display: flex;
+              gap: 22px;
+              padding-left: 24px;
+              padding-right: 24px;
+              padding-top: 24px;
+              padding-bottom: 22px;
+              justify-content: space-around;
+              align-items: center;
+              margin-top: 24px;
+            "
+          >
+            <div
+              style="
+                position: relative;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                min-width: 40px;
+                width: 40px;
+                height: 40px;
+                border-radius: 100%;
+                border: 2px solid #f2f2f7;
+              "
+            >
+              <img
+                style="position: absolute; width: 100%; height: 100%"
+                src="./img/nomad-symbol.svg"
+                alt="symbol-vector"
+              />
+              <span
+                style="
+                  position: absolute;
+                  left: 50%;
+                  top: 50%;
+                  transform: translate(-50%, -50%);
+                  font-size: 17px;
+                  font-weight: normal;
+                  line-height: 22px;
+                  letter-spacing: -0.43px;
+                  color: #3d3d3d;
+                  font-family: Robot, sans-serif;
+                "
+                >1</span
+              >
+            </div>
+            <div>
+              <h3
+                style="
+                  margin: 0;
+                  font-size: 17px;
+                  font-weight: 600;
+                  line-height: 22px;
+                  color: #3d3d3d;
+                  font-family: Robot, sans-serif;
+                  letter-spacing: -0.43px;
+                "
+              >
+                Кимге даарат алуу парз?
+              </h3>
+              <ul style="margin: 0; padding: 0">
+                <li style="list-style: none">
+                  <p
+                    style="
+                      margin-bottom: 0;
+                      margin-top: 8px;
+                      font-size: 16px;
+                      font-weight: normal;
+                      line-height: 22px;
+                      letter-spacing: -0.41px;
+                      color: #3d3d3d;
+                      font-family: Robot, sans-serif;
+                    "
+                  >
+                    1. Мусулманга.
+                  </p>
+                </li>
+                <li style="list-style: none">
+                  <p
+                    style="
+                      margin-bottom: 0;
+                      margin-top: 8px;
+                      font-size: 16px;
+                      font-weight: normal;
+                      line-height: 22px;
+                      letter-spacing: -0.41px;
+                      color: #3d3d3d;
+                      font-family: Robot, sans-serif;
+                    "
+                  >
+                    2. Балагатка жеткен балага жана кызга.
+                  </p>
+                </li>
+                <li style="list-style: none">
+                  <p
+                    style="
+                      margin-bottom: 0;
+                      margin-top: 8px;
+                      font-size: 16px;
+                      font-weight: normal;
+                      line-height: 22px;
+                      letter-spacing: -0.41px;
+                      color: #3d3d3d;
+                      font-family: Robot, sans-serif;
+                    "
+                  >
+                    3. Акыл эси бар адамга.
+                  </p>
+                </li>
+                <li style="list-style: none">
+                  <p
+                    style="
+                      margin-bottom: 0;
+                      margin-top: 8px;
+                      font-size: 16px;
+                      font-weight: normal;
+                      line-height: 22px;
+                      letter-spacing: -0.41px;
+                      color: #3d3d3d;
+                      font-family: Robot, sans-serif;
+                    "
+                  >
+                    4. Сууну колдонууга кудурети жеткен адамга.
+                  </p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Namaz -->
+
+    <!-- Bul Jerde surotu menen korsotulgon daarat aluu tartibi korsotulgon -->
+    <div
+      style="
+        margin-top: 24px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+      "
+    >
+      <img
+        style="width: 326px; height: 351px; border-radius: 20px"
+        src="./img/aiym-ruku.svg"
+        alt="aiym-ruku"
+      />
+      <div
+        style="
+          background-color: #89b9ad;
+          height: fit-content;
+          width: 91%;
+          max-width: 500px;
+          border-radius: 40px;
+          display: flex;
+          gap: 22px;
+          padding-left: 24px;
+          padding-right: 24px;
+          padding-top: 24px;
+          padding-bottom: 22px;
+          justify-content: space-around;
+          align-items: center;
+          margin-top: 24px;
+        "
+      >
+        <div>
+          <h3
+            style="
+              margin: 0;
+              font-size: 17px;
+              font-weight: 600;
+              line-height: 22px;
+              color: #ffffff;
+              font-family: Robot, sans-serif;
+              letter-spacing: -0.43px;
+            "
+          >
+            1st step
+          </h3>
+          <h3
+            style="
+              margin: 0;
+              margin-top: 5px;
+              font-size: 17px;
+              font-weight: 600;
+              line-height: 22px;
+              color: #3d3d3d;
+              font-family: Robot, sans-serif;
+              letter-spacing: -0.43px;
+            "
+          >
+            Руки моются до запястья.
+          </h3>
+          <p
+            style="
+              margin-bottom: 0;
+              margin-top: 8px;
+              font-size: 16px;
+              font-weight: normal;
+              line-height: 22px;
+              letter-spacing: -0.41px;
+              color: #3d3d3d;
+              font-family: Robot, sans-serif;
+            "
+          >
+            Руки моются до запястья. При мытье пальцами одной руки протирают
+            промежутки между пальцами другой руки. Если на пальцах кольца, то их
+            смещают, чтобы под них попала вода.
+          </p>
+          <div style="width: 100%; margin-top: 26px">
+            <div
+              style="
+                background: #ffffff;
+                border-radius: 12px;
+                padding-top: 12px;
+                padding-bottom: 11px;
+                padding-right: 35px;
+                padding-left: 35px;
+              "
+            >
+              <div style="display: flex; justify-content: space-between">
+                <div style="display: flex; gap: 30px">
+                  <div
+                    style="
+                      width: 32px;
+                      height: 32px;
+                      border-radius: 5px;
+                      background-color: #f2f2f7;
+                      border: 0.5px solid #c7c7cc;
+                      display: flex;
+                      justify-content: center;
+                      align-items: center;
+                    "
+                    id="togglePlayBtn"
+                  >
+                    <button
+                      style="
+                        width: 13px;
+                        height: 13px;
+                        border-radius: 2px;
+                        background-color: #ffffff;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        border: none;
+                        outline: none;
+                      "
+                    >
+                      <img
+                      style="width: 6px; height: 6px;"
+                        class="play-image"
+                        style="cursor: pointer"
+                        src="./img/Vector.svg"
+                        alt="play-btn"
+                      />
+                    </button>
+                  </div>
+                  <p
+                    class="max-width: 100px; margin-bottom: 0; font-size: 12px; font-weight: normal; line-height: 16px; letter-spacing: 0; color: #121212; font-family: Robot, sans-serif;"
+                  >
+                    Lorem ipsum
+                  </p>
+                </div>
+                <div style="display: flex">
+                  <p
+                  id="duration"
+                    class="max-width: 100px; margin-bottom: 0; font-size: 12px; font-weight: normal; line-height: 16px; letter-spacing: 0; color: #121212; font-family: Robot, sans-serif;"
+                  >
+                                  </p>
+                </div>
+              </div>
+              <audio id="audio" controls style="display: none">
+                <source src="./audios/sura--al--ihlas-al--falak-an-nas.mp3" type="audio/mpeg" />
+              </audio>              
+              <input
+                style="width: 100%;"
+                class="custom-range"
+                type="range"
+                min="0"
+                max="100"
+                id="progress"
+                value="0"
+                step="1"
+              />
+            </div>
+          </div>
+          <p
+            style="
+              margin-bottom: 0;
+              margin-top: 26px;
+              font-size: 16px;
+              font-weight: normal;
+              line-height: 22px;
+              letter-spacing: -0.41px;
+              color: #3d3d3d;
+              font-family: Robot, sans-serif;
+            "
+          >
+            Руки моются до запястья. При мытье пальцами одной руки протирают
+            промежутки между пальцами другой руки. Если на пальцах кольца, то их
+            смещают, чтобы под них попала вода.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      const audio = new Audio('./audios/sura--al--ihlas-al--falak-an-nas.mp3');
+      const progressBar = document.getElementById('progress');
+      // const currentTimeSpan = document.getElementById("current-time");
+      const durationSpan = document.getElementById("duration");
+      const playImage = document.querySelector(".play-image");
+  
+      function formatTime(seconds) {
+        const minutes = Math.floor(seconds / 60);
+        const remainingSeconds = Math.floor(seconds % 60);
+        return `${minutes}:${remainingSeconds < 10 ? '0' + remainingSeconds : remainingSeconds}`;
+      }
+  
+      audio.onloadedmetadata = () => {
+        durationSpan.textContent = formatTime(audio.duration);
+      };
+  
+      audio.ontimeupdate = () => {
+        durationSpan.textContent = formatTime(audio.currentTime);
+        const progress = (audio.currentTime / audio.duration) * 100;
+        progressBar.value = progress;
+  
+        progressBar.style.background = `linear-gradient(to right, green ${progress}%, #ddd ${progress}%)`;
+      };
+  
+      progressBar.oninput = () => {
+        audio.currentTime = (progressBar.value / 100) * audio.duration;
+      };
+  
+      document.querySelector('#togglePlayBtn').addEventListener('click', () => {
+        if (audio.paused) {
+          playImage.src = "./img/pause.svg"
+          audio.play();
+        } else {
+          playImage.src = "./img/Vector.svg"
+          audio.pause();
+        }
+      });
+    </script>
+  </body>
+</html>
