@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -11,7 +11,7 @@
     />
     <title>Document</title>
     <style>
-      #progress[type="range"] {
+      #progress[type='range'] {
         -webkit-appearance: none;
         width: 100%;
         height: 4px;
@@ -21,17 +21,17 @@
         cursor: pointer;
       }
 
-      #progress[type="range"]::-webkit-slider-thumb {
+      #progress[type='range']::-webkit-slider-thumb {
         -webkit-appearance: none;
         height: 14px;
         width: 14px;
         border-radius: 50%;
         background: #fff;
-        border: 1px solid #89b9ad;
+        border: 1px solid #025e4f;
       }
 
-      #progress[type="range"]::-moz-range-track {
-        background: #89b9ad;
+      #progress[type='range']::-moz-range-track {
+        background: #025e4f;
         border-radius: 5px;
         z-index: 2929;
       }
@@ -82,7 +82,7 @@
                 font-weight: 300;
                 line-height: 26px;
                 text-transform: capitalize;
-                color: #89b9ad;
+                color: #025e4f;
                 font-family: Robot, sans-serif;
                 letter-spacing: -0.43px;
               "
@@ -121,7 +121,7 @@
 
             <div
               style="
-                background-color: #89b9ad;
+                background-color: #025e4f;
                 height: fit-content;
                 width: 91%;
                 max-width: 500px;
@@ -203,7 +203,7 @@
 
             <div
               style="
-                background-color: #89b9ad;
+                background-color: #025e4f;
                 height: fit-content;
                 width: 91%;
                 max-width: 500px;
@@ -410,17 +410,17 @@
     <!-- closes main wrapper -->
 
     <script>
-      const audio = new Audio("../audios/sura--al--ihlas-al--falak-an-nas.mp3");
-      const progressBar = document.getElementById("progress");
+      const audio = new Audio('../audios/sura--al--ihlas-al--falak-an-nas.mp3');
+      const progressBar = document.getElementById('progress');
       // const currentTimeSpan = document.getElementById("current-time");
-      const durationSpan = document.getElementById("duration");
-      const playImage = document.querySelector(".play-image");
+      const durationSpan = document.getElementById('duration');
+      const playImage = document.querySelector('.play-image');
 
       function formatTime(seconds) {
         const minutes = Math.floor(seconds / 60);
         const remainingSeconds = Math.floor(seconds % 60);
         return `${minutes}:${
-          remainingSeconds < 10 ? "0" + remainingSeconds : remainingSeconds
+          remainingSeconds < 10 ? '0' + remainingSeconds : remainingSeconds
         }`;
       }
 
@@ -440,12 +440,12 @@
         audio.currentTime = (progressBar.value / 100) * audio.duration;
       };
 
-      document.querySelector("#togglePlayBtn").addEventListener("click", () => {
+      document.querySelector('#togglePlayBtn').addEventListener('click', () => {
         if (audio.paused) {
-          playImage.src = "../img/pause.svg";
+          playImage.src = '../img/pause.svg';
           audio.play();
         } else {
-          playImage.src = "../img/Vector.svg";
+          playImage.src = '../img/Vector.svg';
           audio.pause();
         }
       });
