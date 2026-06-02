@@ -58,6 +58,12 @@
       color: #52635f;
     }
 
+    .home-actions {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
     .home-button {
       display: inline-flex;
       align-items: center;
@@ -88,6 +94,19 @@
       transform: translateY(0);
     }
 
+    .home-button.secondary {
+      background: #ffffff;
+      color: #025e4f;
+      border: 1px solid rgba(2, 94, 79, 0.18);
+      box-shadow: none;
+    }
+
+    .home-button.secondary:hover {
+      background: #f3faf7;
+      color: #014c40;
+      box-shadow: none;
+    }
+
     @media (max-width: 480px) {
       .home-card {
         padding: 28px 20px;
@@ -109,14 +128,22 @@
     <div class="home-badge">☪</div>
     <h1 class="home-title">Аялдар үчүн багымдат намазы</h1>
     <p class="home-text">
-      Багымдат намазынын 2 рекет сүннөтүн сүрөт жана аудио менен үйрөнүү
+      Багымдат намазынын сүннөт жана фарз бөлүмдөрүн сүрөт жана аудио менен үйрөнүү
     </p>
-    <a
-      class="home-button"
-      href="./namaz-surot-menen/ayal-namazy/bagumdat/bagumdatSunnot.html"
-    >
-      Сүннөт намазын ачуу
-    </a>
+    <div class="home-actions">
+      <a
+        class="home-button"
+        href="./namaz-surot-menen/ayal-namazy/bagumdat/bagumdatSunnot.html"
+      >
+        2 рекет сүннөт намазын ачуу
+      </a>
+      <a
+        class="home-button secondary"
+        href="./namaz-surot-menen/ayal-namazy/bagumdat/bagumdatFarz.html"
+      >
+        2 рекет фарз намазын ачуу
+      </a>
+    </div>
   </div>
 </body>
 </html>
