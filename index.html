@@ -61,7 +61,22 @@
     .home-actions {
       display: flex;
       flex-direction: column;
-      gap: 12px;
+      gap: 18px;
+    }
+
+    .prayer-group {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      width: 100%;
+    }
+
+    .prayer-group-title {
+      margin: 0;
+      font-size: 15px;
+      font-weight: 700;
+      color: #025e4f;
+      text-align: left;
     }
 
     .home-button {
@@ -131,30 +146,81 @@
       Намаздарды сүрөт жана аудио менен этап-этабы менен үйрөнүү
     </p>
     <div class="home-actions">
-      <a
-        class="home-button"
-        href="./namaz-surot-menen/ayal-namazy/bagumdat/bagumdatSunnot.html"
-      >
-        Багымдат — 2 рекет сүннөт
-      </a>
-      <a
-        class="home-button secondary"
-        href="./namaz-surot-menen/ayal-namazy/bagumdat/bagumdatFarz.html"
-      >
-        Багымдат — 2 рекет фарз
-      </a>
-      <a
-        class="home-button secondary"
-        href="./namaz-surot-menen/ayal-namazy/beshim/beshimTortReketSunnot.html"
-      >
-        Бешим — 4 рекет сүннөт
-      </a>
-      <a
-        class="home-button secondary"
-        href="./namaz-surot-menen/ayal-namazy/sham/shamYshReketFarz.html"
-      >
-        Шам — 3 рекет фарз
-      </a>
+      <div class="prayer-group">
+        <p class="prayer-group-title">Багымдат</p>
+        <a
+          class="home-button"
+          href="./namaz-surot-menen/ayal-namazy/bagumdat/bagumdatSunnot.html"
+        >
+          Багымдат — 2 рекет сүннөт
+        </a>
+        <a
+          class="home-button secondary"
+          href="./namaz-surot-menen/ayal-namazy/bagumdat/bagumdatFarz.html"
+        >
+          Багымдат — 2 рекет фарз
+        </a>
+      </div>
+      <div class="prayer-group">
+        <p class="prayer-group-title">Бешим</p>
+        <a
+          class="home-button secondary"
+          href="./namaz-surot-menen/ayal-namazy/beshim/beshimTortReketSunnot.html"
+        >
+          Бешим — 4 рекет сүннөт
+        </a>
+        <a
+          class="home-button secondary"
+          href="./namaz-surot-menen/ayal-namazy/beshim/beshimTortReketFarz.html"
+        >
+          Бешим — 4 рекет фарз
+        </a>
+        <a
+          class="home-button secondary"
+          href="./namaz-surot-menen/ayal-namazy/beshim/beshimEkiReketSunnotAkurky.html"
+        >
+          Бешим — акыркы 2 рекет сүннөт
+        </a>
+      </div>
+      <div class="prayer-group">
+        <p class="prayer-group-title">Аср</p>
+        <a
+          class="home-button secondary"
+          href="./namaz-surot-menen/ayal-namazy/asr/asrTortReketFarz.html"
+        >
+          Аср — 4 рекет фарз
+        </a>
+      </div>
+      <div class="prayer-group">
+        <p class="prayer-group-title">Шам</p>
+        <a
+          class="home-button secondary"
+          href="./namaz-surot-menen/ayal-namazy/sham/shamYshReketFarz.html"
+        >
+          Шам — 3 рекет фарз
+        </a>
+        <a
+          class="home-button secondary"
+          href="./namaz-surot-menen/ayal-namazy/sham/shamSunnot.html"
+        >
+          Шам — сүннөт
+        </a>
+      </div>
+      <div class="prayer-group">
+        <p class="prayer-group-title">Куптан</p>
+        <a
+          class="home-button secondary"
+          href="./namaz-surot-menen/ayal-namazy/kuptan/kuptanTortReketFarz.html"
+        >
+          Куптан — 4 рекет фарз
+        </a>
+        <a
+          class="home-button secondary"
+          href="./namaz-surot-menen/ayal-namazy/kuptan/kuptanSunnot.html"
+        >
+          Куптан — сүннөт
+        </a>
+      </div>
     </div>
   </div>
 </body>
